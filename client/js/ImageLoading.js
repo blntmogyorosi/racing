@@ -33,6 +33,8 @@ function loadImages() {
     let imageList = [
         { car: "red_car.png", fileName: "red_car.png" },
         { car: "yellow_car.png", fileName: "yellow_car.png" },
+        { car: "blue_car.png", fileName: "blue_car.png" },
+        { car: "green_car.png", fileName: "green_car.png" },
 
         { tileType: TileType.ROAD, fileName: "tile_road.png" },
         { tileType: TileType.PLAYERSTART, fileName: "tile_road.png" },
