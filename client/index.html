@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Racing</title>
+</head>
+
+<body>
+    <div class="join">
+        <div class="join__form form">
+            <form action="game.html">
+                <h3>Join to a Room</h3>
+                <div class="form-group">
+                    <div class="input-control">
+                        <label for="roomId">Room</label>
+                        <input type="text" id="roomId" name="roomId" autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-control">
+                        <label for="joinName">Name</label>
+                        <input type="text" id="joinName" name="name" autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group selectable-group">
+                    <div class="input-control">
+                        <input type="radio" id="joinImage1" name="image" value="red_car.png">
+                        <label for="joinImage1">
+                            <img src="/img/red_car.png">
+                        </label>
+                    </div>
+                    <div class="input-control">
+                        <input type="radio" id="joinImage2" name="image" value="yellow_car.png">
+                        <label for="joinImage2">
+                            <img src="/img/yellow_car.png">
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full-width">Join</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

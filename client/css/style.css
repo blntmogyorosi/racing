@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --colorPrimary: #227093;
+    --colorDark: #132731;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #F3F9FE;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: var(--colorPrimary);
+    color: white;
+}
+
+.btn.btn-full-width {
+    display: block;
+    width: 100%;
+}
+
+.form {
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    background-color: white;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--colorDark);
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-group.selectable-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group.selectable-group input[type="radio"],
+.form-group.selectable-group input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.form-group.selectable-group label {
+    display: block;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+.form-group.selectable-group input:active + label,
+.form-group.selectable-group label:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.form-group.selectable-group input:checked + label {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/* JOIN PAGE - START */
+.join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* JOIN PAGE - END */
+
+/* GAME PAGE - START */
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.game .game__canvas {
+    margin: 0.5rem;
+}
+
+.game .game__info {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    background-color: white;
+}
+/* GAME PAGE - END */
