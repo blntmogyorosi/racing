@@ -35,6 +35,9 @@ function loadImages() {
         { car: "yellow_car.png", fileName: "yellow_car.png" },
         { car: "blue_car.png", fileName: "blue_car.png" },
         { car: "green_car.png", fileName: "green_car.png" },
+        { car: "black_car.png", fileName: "black_car.png" },
+        { car: "orange_car.png", fileName: "orange_car.png" },
+        { car: "sara_car.png", fileName: "sara_car.png" },
 
         { tileType: TileType.ROAD, fileName: "tile_road.png" },
         { tileType: TileType.PLAYERSTART, fileName: "tile_road.png" },
